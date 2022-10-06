@@ -1,2 +1,10 @@
-<h1>Games#new</h1>
-<p>Find me in app/views/games/new.html.erb</p>
+<div class="container pt-5 col-4 text-center">
+  <h1 class="pb-5">New game</h1>
+  <ul>
+    <% @letters.each do |letter| %>
+      <li class="btn btn-primary">
+        <%= letter.capitalize %>
+      </li>
+    <% end %>
+  </ul>
+</div>
