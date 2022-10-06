@@ -2,6 +2,9 @@ require 'open-uri'
 
 class GamesController < ApplicationController
   def new
+    # @letters = Array.new(5) { VOWELS.sample }
+    # @letters += Array.new(5) { (('A'..'Z').to_a - VOWELS).sample }
+    # @letters.shuffle!
     @letters = Array.new(10) { (('a'..'z').to_a).sample }
   end
 
